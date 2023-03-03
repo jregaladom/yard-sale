@@ -43,8 +43,7 @@
         .title{
             font-size: var(--lg);
             margin-bottom: 12px;
-            text-align: center;
-
+            text-align: start;
         }
         .subtitle{
             font-size: var(--md);
@@ -105,6 +104,12 @@
             margin-top: 14px;
             margin-bottom: 30px;
         }
+        .input-name,
+        .input-email,
+        .input-password {
+        margin-bottom: 22px;
+        }
+
         @media (max-width: 640px){
             .logo{
                 display: block;
@@ -120,15 +125,20 @@
     <div class="login">
         <div class="form-container">
             <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title">
+               My account
+            </h1>
             <form action="" class="form">
+                <label for="name" class="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Camila Yakoo" class="input input-name">
+
                 <label for="email" class="label">Email address</label>
-                <input type="email" name="email" id="email" placeholder="camilayakoo@gmail.com" class="input">
+                <input type="email" name="email" id="email" placeholder="camilayakoo@gmail.com" class="input input-email">
+
                 <label for="password" class="label">Password</label>
                 <input type="password" name="password" id="password" placeholder="*******" class="input input-password">
 
-                <input type="button" class="primary-button login-button" value="Log in">
-                <a href="/">Forgot my password</a>
-                <input type="button" class="secondary-button signup-button" value="Sign up">
+                <input type="button" class="primary-button login-button" value="Create">
             </form>
         </div>
     </div>
