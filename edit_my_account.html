@@ -50,6 +50,16 @@
             font-size: var(--sm);
             font-weight: bold;
             margin-bottom: 5px;
+            margin-left: 8px;
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 20px;
         }
         .label-input{
             background-color: var(--white);
@@ -59,6 +69,7 @@
             font-size: var(--md);
             padding: 6px;
             margin-bottom: 20px;
+            color:var(--very-light-pink);
         }
         .form{
             display: flex;
@@ -125,12 +136,12 @@
                My account
             </h1>
             <form action="/" class="form">
-                <label for="name" class="name">Name</label>
-                <label for="text" class="label-input input-name">Camila Yakoo</label>
-                
+                <label for="name" class="label">Name</label>
+                <label for="name" class="label-input">Camila Yakoo</label>
 
                 <label for="email" class="label">Email address</label>
-                <input type="email" name="email" id="email" placeholder="camilayakoo@gmail.com" class="input input-email">
+                <label for="email" class="label-input">camilayakoo@gmail.com</label>
+                
 
                 <label for="password" class="label">Password</label>
                 <input type="password" name="password" id="password" placeholder="*******" class="input input-password">
