@@ -4,5 +4,5 @@ const menuEmail = document.querySelector('.navbar-email');
 menuEmail.addEventListener('click', toggleMenudesktop);
 
 function toggleMenudesktop() {
-    alert('hello');
+
 }
